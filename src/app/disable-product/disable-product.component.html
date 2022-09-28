@@ -1,0 +1,19 @@
+<div style="background-image: url('../assets/disable.jpg');" class="disable"><br><br>
+
+<section style="background-color: rgb(132, 218, 74); margin-left: 550px;margin-right: 450px;" >
+    <div style="text-align: center;">
+          <input type="text"  style="margin-left: -10px;margin-top: 30px;" id="id" required [(ngModel)]="user.id"   name="id">Product id<br><br>
+    
+          <input type="text" style="margin-left:14px ;" id="name" required   name="name">Product Name<br><br>
+    
+          <input type="text"  style="margin-left: 50px;" id="description" required  name="description">Product Description<br><br>
+    
+          <input type="text"  style="margin-left:35px ;" id="quantity" required  name="quantity">Product Quantity<br><br>
+    
+          <input type="text"  style="margin-left: 15px;" id="price" required  >Product Price<br><br><br>
+         <button type="button" class="btn btn-success" 
+             style="margin-left:200px;margin-bottom: 30px; color:blue;" (click)="delete()"  >Disable This Product</button>
+    </div>
+    
+    </section> 
+</div>

@@ -1,0 +1,30 @@
+<div class="admin" style="background-image: url('../assets/admin.jpg');"><br><br>
+
+<section class="vh100" style="text-align: center;background-color:yellowgreen; margin-left: 450px;margin-right: 450px;margin-top: 90px;" >
+ 
+ <div style="height: 350px ;"> <br><br>
+
+    <h1 style="color: yellow;">Hi ADMIN..Welcome </h1><br><br>
+    
+    <div>
+        
+           <div class="form-inline">
+                <label>Admin Name<span style="color: red" *ngIf="username.invalid">*</span> :  </label>
+                <input type="text" class="form-control" ngModel #username="ngModel" name="username" required><br>
+                <span *ngIf="username.invalid && username.touched" style="color: red">user name is Requried....!</span>
+           </div><br>
+           
+           <div class="form-inline">
+            <label>Admin Pass<span style="color: red" *ngIf="userpass.invalid">*</span> :  </label>
+                <input type="text" class="form-control" ngModel #userpass="ngModel" required name="userpass" required><br>
+                <span *ngIf="userpass.invalid &&  userpass.touched" style="color: red">password is Requried....!</span>
+            </div><br>
+
+       <button type="submit" class="btn btn-primary" style="margin-left: 200px;" (click)="goToPage('adminProducts')" > LOGIN </button>
+
+    
+    </div>
+ </div> 
+</section>
+
+</div>

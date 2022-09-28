@@ -1,0 +1,69 @@
+ <div class="products"
+ style="background-image: url('../assets/plain.avif');">
+ 
+ <h1 style="text-align: center;color:aliceblue;">Products List Detalis</h1>
+
+ <div class="container" role="main">
+
+      <div class="page-header">
+  
+          <form action="" method="GET" class="form-inline pull-right">
+  
+              <div class="form-group form-group-lg has-feedback">
+  
+                  <label class="sr-only" for="search">Search</label>
+                  <input type="text" class="form-control" name="q" id="search" placeholder="Search">
+  
+                  <span class="glyphicons glyphicons-xl glyphicons-group form-control-feedback"></span>
+  
+              </div>
+  
+              <button type="submit" class="btn btn-lg btn-success">
+              <span class="glyphicons glyphicons-search" aria-hidden="true"></span>Search
+              </button>
+  
+          </form>
+  
+          
+  
+      </div>
+  
+
+  
+  </div><br><br>
+
+  <table class="table table-bordered table-stripped" style="width: 50%;margin-left: 300px;background-color: aliceblue; text-align: center;">
+     <thead>
+        <tr >
+            <th style="text-align:center ;">Id</th>
+            <th style="text-align:center ;">Name</th>
+            <th style="text-align:center ;">Description</th>
+            <th style="text-align:center ;">Quantity</th>
+            <th style="text-align:center ;">Price (in INR)</th>
+        </tr>
+     </thead>
+        <tbody>
+             <tr *ngFor="let p of users">
+                   <td>{{p.id}}</td>
+                   <td>{{p.name}}</td>
+                   <td>{{p.description}}</td>
+                   <td>{{p.quantity}}</td>
+                   <td>{{p.price}}</td>
+
+                  
+                   
+                
+                    <td><button type="button"  class="btn btn-primary" (click)="goToPage('payment')">BUY</button></td> 
+                   <td> <button type="button" class="btn btn-info">Add To Cart</button> </td>
+                  
+             </tr>
+       </tbody> 
+ </table> 
+</div>
+
+
+
+ 
+            
+    
+

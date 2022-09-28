@@ -1,0 +1,39 @@
+<h1 style="text-align: center;">Your Products</h1><br>
+
+<table class="table table-bordered table-stripped" style="width: 50%;margin-left: 300px;background-color: aliceblue; text-align: center;">
+   <thead>
+      <tr >
+          <th style="text-align:center ;">Id</th>
+          <th style="text-align:center ;">Name</th>
+          <th style="text-align:center ;">Description</th>
+          <th style="text-align:center ;">Quantity</th>
+          <th style="text-align:center ;">Price (in INR)</th>
+          <button type="button" class="btn btn-danger"  style="margin-left:40px;margin-top: 10px;" (click)="goToPage('addProduct')" >Add Product</button>
+      </tr>
+   </thead>
+      <tbody>
+           <tr *ngFor="let p of users">
+                 <td>{{p.id}}</td>
+                 <td>{{p.name}}</td>
+                 <td>{{p.description}}</td>
+                 <td>{{p.quantity}}</td>
+                 <td>{{p.price}}</td>
+
+                
+                 
+              
+                  <td><button type="button"  class="btn btn-primary" (click)="goTo()" >Update</button></td> 
+                 <td> <button type="button" class="btn btn-info" (click)="go()" >Disable</button> </td>
+                
+           </tr>
+     </tbody> 
+</table> 
+
+
+
+
+
+          
+  
+
+
